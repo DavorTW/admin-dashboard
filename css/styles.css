@@ -23,12 +23,12 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 25rem 6fr;
 }
 
 header{
     grid-column: 2 / 3;
-    padding: 4rem 3rem;
+    padding: 3rem 3rem;
 }
 
 .notification-bar{
@@ -52,7 +52,7 @@ header{
     padding: 0.6rem 1rem;
 }
 
-.icon{
+.icon.small{
     height: 2.2rem;
     width: 2.2rem;
     margin-right: 1rem;
@@ -79,11 +79,6 @@ header{
     height: 6rem;
     background-color: var(--icon-background);
     border-radius: 50%;
-}
-
-.navigation-container{
-    grid-column: 1;
-    grid-row: 1/3;
 }
 
 .profile-bar{
@@ -123,4 +118,33 @@ header{
 
 .action-item:hover{
     cursor: pointer;
+}
+
+.navigation-container{
+    grid-column: 1;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    padding: 3rem 1rem;
+    color: #fff;
+}
+
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo > p{
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+.icon.big{
+    height: 5rem;
+    stroke-width: 0.2rem;
+    stroke: #fff;
+    fill: #fff;
 }
