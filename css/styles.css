@@ -52,12 +52,18 @@ header{
     padding: 0.6rem 1rem;
 }
 
+.icon{
+    stroke: #fff;
+    stroke-width: 0.2rem;
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
 .icon.small{
     height: 2.2rem;
     width: 2.2rem;
     margin-right: 1rem;
     stroke: #000;
-    stroke-width: 0.2rem;
 }
 
 .notifications{
@@ -142,9 +148,26 @@ header{
     font-weight: bold;
 }
 
-.icon.big{
-    height: 5rem;
-    stroke-width: 0.2rem;
-    stroke: #fff;
+.icon-logo{
+    height: 4rem;
+    width: 4rem;
     fill: #fff;
+}
+
+.navigation{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5rem;
+}
+
+.navigation > li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.navigation-item > p{
+    margin-left: 1rem;
+    font-weight: bold;
 }
