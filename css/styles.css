@@ -174,7 +174,7 @@ header{
 }
 
 .main-content{
-    padding: 0 2rem;
+    padding: 0 2rem 2rem 2rem;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 2rem;
@@ -214,4 +214,55 @@ header{
     justify-content: end;
     margin: 0;
     padding: 0
+}
+
+.annoucement-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.annoucement > h3{
+    margin: 0;
+}
+
+.annoucement > p{
+    margin: 1rem 0 2rem 0;
+}
+
+hr{
+    height: 0.2rem;
+    background-color: var(--light-gray);
+    border: none;
+}
+
+.people-container{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.people{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+
+.person-info > *{
+    margin: 0;
+}
+
+.bio{
+    color: gray;
+}
+
+.profile-avatar{
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
 }
